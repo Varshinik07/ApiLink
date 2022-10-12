@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PublicapiComponent } from './publicapi/publicapi.component';
 import{RouterModule,Routes} from '@angular/router';
+import {  HttpClientModule} from '@angular/common/http';
 const appRoutes:Routes=[
   {
     path:"",component:PublicapiComponent
@@ -23,6 +24,7 @@ const appRoutes:Routes=[
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
